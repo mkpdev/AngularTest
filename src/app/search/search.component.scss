@@ -1,0 +1,49 @@
+h2, h3, form {
+    text-align: center;
+}
+form {
+    width: 700px;
+}
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+    margin-top: 50px;
+}
+.stringInpt .mat-form-field-flex {
+    height: 40px !important;
+}
+.submit-button {
+    text-align: right;
+    display: flex;
+}
+.submit-button button[type="submit"] {
+    background-color: green;
+    color: #fff;
+    width: 120px;
+    height: 50px;
+    margin: 0px 10px 0px 10px;
+}
+button[type="reset"] {
+    background-color: #337ab7;
+    color: #fff;
+    width: 120px;
+    height: 50px;
+}
+.user_info {
+    max-width: 75%;
+    margin:  0 auto;
+    padding-top: 30px;
+}
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form .form-details {
+    width: 100%;
+    text-align: left;
+}
+.mat-form-field {
+    width: 90%;
+}

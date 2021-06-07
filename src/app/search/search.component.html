@@ -1,0 +1,26 @@
+<div>
+  <div class="container">
+    <div>
+      <h2><strong>Angular Demo</strong></h2>
+    </div>
+    <form>
+      <div class="form-details">
+        <mat-form-field class="example-full-width stringInpt" appearance="outline">
+          <mat-label>Enter String</mat-label>
+          <input matInput type="text" name="getSearchData" [(ngModel)]="getSearchData" />
+        </mat-form-field>
+      </div>
+      <div class="submit-button">
+        <button mat-button type="submit" [disabled]="!getSearchData" (click)="searchData(getSearchData)">
+          Submit
+        </button>
+        <button mat-button type="reset" (click)="resetInput()">
+          Reset
+        </button>
+      </div>
+    </form>
+  </div>
+  <div *ngIf="getData" class="user_info">
+    <app-result [dataLength]="totalCount" [searchResult]="getItemData" ></app-result>
+  </div>
+</div>
